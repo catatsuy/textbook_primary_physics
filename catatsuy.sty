@@ -1,0 +1,47 @@
+% catatsuyが作成した雑多なスタイルファイル
+% 全く整理していません
+
+\setlength{\textheight}{49\baselineskip+\topskip}
+\setlength{\topmargin}{(297truemm-\textheight)/2-1truein-1truecm}
+\setlength{\textwidth}{47zw}
+\setlength{\oddsidemargin}{(210truemm-\textwidth)/2-5zw-1truein}
+\setlength{\evensidemargin}{(210truemm-\textwidth)/2-5zw}
+\setlength{\marginparwidth}{11zw}%-18truept}
+\renewcommand{\Bar}{\overline}
+\renewcommand{\vec}[1]{\ifmmode\mathrm{\overrightarrow{\mathit{\vphantom b #1}}}\else $\mathrm{\overrightarrow{\mathit{\vphantom b #1}}}$\fi}
+\renewcommand{\headfont}{\sffamily\bfseries}
+%\vec aとすればいい感じ　数式中でも本文中でも可
+\renewcommand{\Vec}[1]{\ifmmode\overrightarrow{\mathrm{#1}}\else$\overrightarrow{\mathrm{#1}}$\fi}
+\let\tsum\tretuwa
+%\Vec{AB}とすれば数式中でも本文中でもローマン体になる
+\pagestyle{headings}
+\let\epsilon\varepsilon
+\newcommand{\varg}{\ifmmode\text{\usefont{U}{pxmia}{m}{it}1}\else {\usefont{U}{pxmia}{m}{it}1}\fi}
+\newcommand{\kyakuchuu}[1]{*~\marginpar{\sffamily#1}}%このコマンドはいじる可能性大
+\newcommand{\koushiki}{}%仮　途中から適用したため不統一　途中から太字はベクトルで使うから強調の太字はまずいと思った
+
+\setcounter{secnumdepth}{3}%subsubsectionの章番号表示
+
+%%--list環境設定
+%\enumSepi{\leftmargin=0ptsep (\baselinskip)/2 plus 3pt minus 2pt\topsep=0pt\parskip=0pt
+\enumSep{\narrowenumsep}
+\enumSep{\leftmargin=1zw}
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{\ajMaru{\theenumi}}
+\renewcommand{\theenumii}{\arabic{enumii}}
+\renewcommand{\labelenumii}{\ajKakko{\theenumii}}
+\renewcommand{\labelitemii}{$\circ$}
+%%--list終わり
+
+\newcommand{\unit}[1]{\ifmmode\mathrm{\,[#1]}\else $\mathrm{[#1]}$\fi}%単位に使用 数式中では空白を本文中では空白なし
+\def\degree{\ifmmode \text{\textdegree} \else \textdegree\fi}%使うのか？
+\def\mycdots{\mathinner{\cdotp\cdotp\cdotp}}
+%\bekutorukata{fill}
+\changeArrowHeadSize<.25>{1}
+%\setarrowsize<.25>{}{35}{40}
+\newenvironment{fullwidthpage}{%
+\@mparswitchfalse
+\linewidth\fullwidth
+\columnwidth\fullwidth
+\hsize\fullwidth
+\evensidemargin\oddsidemargin\relax}{\clearpage}%目次で傍注の部分を削除するため

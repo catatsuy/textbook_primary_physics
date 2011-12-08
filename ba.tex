@@ -1,0 +1,312 @@
+\section{場の概念の導入}
+
+素朴な素粒子論に基づく古典物理学における力は次の2種類（量子力学レベルでは他に弱い力・強い力の合計4種類がある）
+
+\begin{itemize}
+\item \kintou{4zw}{重力}：質量に働く力%重力質量
+\item 電磁気力：電荷に働く力
+\end{itemize}
+
+%\begin{wrapfigure}{l}{7zw}
+万有引力の式$G\bunsuu{m_1m_2}{r^2}$\marginpar{\begin{zahyou*}[ul=3zw](-1.6,1.1)(-0.2,.5)%
+\tenretu*{A(-1,0);B(1,0);C(-.7,0);D(.7,0)}
+\Hasen{\A\B}
+\ArrowLine\A\C
+\ArrowLine\B\D
+\Put\A[nw]{$m_1$}
+\Put\B[ne]{$m_2$}
+\HenKo[0]\B\A{$r$}
+\kuromaru{\A;\B}
+\end{zahyou*}
+}%\end{wrapfigure}
+は力学のときに勉強したはずである。
+しかしここでもう一度この式を良く考えてみよう。
+
+$m_2$を主体とすると$m_1, r$は相手から影響を受ける情報である。
+この情報は例えば$m_1$の位置が変わったり
+（$m_2$を主体と見ているので，もちろん相対的な変化），
+また$m_1$の質量が変わる（これは非常に起こりにくいことだが）とき，
+これらの情報は{\bfseries 瞬時}に$m_2$に伝わるのかを考えて欲しい。
+
+重力では実験（観測）は難しいが\kyakuchuu{宇宙空間で星が爆発する等，特殊な場合には発生することが考えられ
+ていてる。そのときに発生すると見られる重力波を検出しようと試みる研究者もいる。しかし未だに発見されていない}，
+電磁気ではこのような実験は容易にできる。
+そして結論は瞬時には伝わらず，{\bfseries 時間差}があることが分かっている。
+
+よって以上の議論により万有引力の式の表記はまずいことが分かった。
+
+ではどうすればよいのか。
+
+そこで人間が考えたことが『\textgt{\bfseries 場}』の概念の導入である。
+
+﻿\subsection{場とは}%\label{場とは}
+粒子に力を感じさせるような性質が空間にあると考え，
+粒子は力の場から力を受けていると考えることが場の概念である。
+
+そして力の場のでき方が粒子と何らかの法則性を持っていると考えると現象が説明できる。
+
+この場の概念は受験生を苦しませることが多い。しかしよく考えてみて欲しい。
+我々は空間をほとんどの場合幾何的（座標や住所と考えればよい）な性質だけでは
+考えていない。
+
+例えば，明るい・暖かい・にぎやかな・いい感じ・気味の悪いなど空間に何らかの性質を考えている
+ことの方が圧倒的に多い。このとき空間にはその性質の場があるという。
+
+そして場には大きく分けて以下の2つがある。
+
+\begin{itemize}
+\item スカラー場：明るさの場・温度の場等
+\item ベクトル場：風や水の{\bfseries 流れ}の場
+\end{itemize}
+
+﻿\subsection{重力・電磁気力の表現}
+
+\subsubsection{重力の表現}
+
+$m$の位置の重力場が$\bm C$の時，重力は$\bm{F} =m\bm{C}$と表せる。
+
+ちなみに地表付近の重力場は近似的に鉛直下向きに一様で大きさ$\varg$である。
+
+\subsubsection{電磁気力の表現}
+
+電場$\bm E (\bm r,t)$，磁束密度$\bm B (\bm r,t)$の位置$\bm r$に電荷$q$がある時，電磁気力は
+\[\bm{}F=q(\bm{E} +\bm{v}\times \bm{B})\]
+と考えれば電磁気のあらゆる現象が説明でき，
+この力をLorentz（ローレンツ）力と呼ぶ。ただしLorentz力というと$q\bm v\times \bm B$のみを
+指すことが高校の参考書等では多い。しかし本書では$\bm E$も含めたこの力をLorentz力と呼ぶことにする。
+
+﻿\subsection{電荷の特徴}
+
+電荷というものを考えてみよう。古典物理では素朴な素粒子論を基礎とするので
+{\bfseries 電荷は素粒子であると考えると分かりやすい}\kyakuchuu{あくまでも人間のideaである}。
+\begin{enumerate}
+\item 電荷には最小単位(電気素量$e=1.6\times 10^{-19}\unit C$)が存在し，この整数倍の電荷しか存在しない
+\item 孤立系の電荷は保存する（電荷保存則）
+\end{enumerate}
+
+\ajMaru 1に関して補足しておく。quarkの電荷の大きさは$\pm\bunsuu{e}{3}, \pm\bunsuu23e$であるが，
+quarkは2個や3個の組み合わせの粒子として存在し，quark単体は現実世界には出てこない。よって電荷の合計
+は必ず$e$の整数倍になる。それがquarkが発見された今でも電気素量$e$の値を変えていない理由である。
+
+\ajMaru 2にも補足。これは同時刻・同位置に正負両電荷が現れ（対生成），
+また逆に同時刻・同位置に正負両電荷が消滅する
+（対消滅）という現象が起こることは否定していない\kyakuchuu{事実起こる}。
+また宇宙全体は一つの孤立系であり，宇宙全体の電荷は保存されていると考えられている。
+
+\subsection{電磁場の法則}
+
+場とはに書いたようにベクトル場を理解しづらいのならば水の流れを
+想像すれば分かりやすい。なので以下の説明は水の流れを思い浮かべて読んで欲しい。
+
+またベクトル場には次の2つがある。
+\begin{enumerate}
+\item わき出し吸いこみのある場（）数学でのdivの概念であるが，今慌ててやる必要は無い
+\item 回転の場（取り囲んでいる場）（洗濯機）数学でのrotの概念である
+\end{enumerate}
+%\begin{tabular}{ccc}
+%\input{div}\hfil\mbox{} & \input{divv}\hfil\mbox{} & \input{rot}\hfil\mbox{} \\ 
+%\mbox{}\hfil\textgt{わき出し}\mbox{}\hfil & \mbox{}\hfil\textgt{吸い込み}\hfil\mbox{} & \mbox{}\hfil\textgt{回転}\hfil\mbox{} \\ 
+%\end{tabular}
+\noindent\hfil\input{div}\hfil \input{divv}\hfil \input{rot}\hfil \\ 
+\hfil\textgt{わき出し}\hfil \textgt{吸い込み} \hfil \textgt{　回転　}\hfil \\ 
+
+\noindent 次節ではこの2つの場が発生する原因について書く。
+
+\subsubsection{電磁場の法則}
+
+以下のことは法則なのでWhy?と言ってはいけない。また以下のことを定式化したものがMaxwell方程式である。
+\begin{enumerate}
+\item 電場は\begin{tabular}{@{\,}l@{}}
+正電荷からわき出て \\ 
+負電荷に吸い込まれる \\ 
+\end{tabular}
+\item 磁場は\begin{tabular}{@{\,}c@{ }l@{\,}}
+N&磁荷からわき出て \\
+%\rlap{ S}\phantom{N }
+S&磁荷に吸い込まれる \\
+\end{tabular}\kyakuchuu{単磁荷(magnetic monopole)は発見されていないので，存在しないと考えればよい}
+\item 電場は$\left\{\begin{array}{@{\,}c@{\,}}
+磁場の時間変化\\
+（磁荷の流れ）\\
+\end{array}\right\}$の周りに取り囲む
+\item 磁場は$\left\{\begin{array}{@{\,}c@{\,}}
+電場の時間変化\\ 
+電流 \\ 
+\end{array}\right\}$の周りに取り囲む
+\end{enumerate}
+
+\subsection{電場のGaussの法則}\label{gauss}
+
+電磁場の法則\ajMaru 1を定式化しよう。
+
+任意の閉曲面\kyakuchuu{世界を外界と内界に分ける曲面。袋を閉じたビニール袋を思い浮かべればよいだろうか？}
+$S$を考えて，
+\begin{center}
+\textgt{\bfseries 任意の閉曲面$\bm S$の表面から出て行く電場の総和}
+$\bm \propto$
+$\bm S$\textgt{\bfseries 内の全電気量}
+\end{center}
+
+である。これを定式化しよう。電場は閉曲面の表面で一様とは{\bfseries 限らない}ので
+積分計算が必要となる。
+
+\begin{wrapfigure}{l}{5zw}
+\input{dse}
+\end{wrapfigure}
+よって微小表面$dS$上で考える。微小表面$dS$上では，電場は一様とみなせる。
+この面を内→外へ貫く\kyakuchuu{もちろんこの向きを正とするという意味である}
+電場の量を次のように表す。
+
+雨が鉛直下方に降っているとき，傘を傾けると防げる雨の量は
+鉛直上方と傘の先端（数学的には傘の面の法線ベクトル）の成す角を$\theta$とすると$\cos\theta$に比例して減る。
+よって雨が鉛直下方から傾いている場合は傘を雨の降る方向に対して先端を平行（つまり傘の面は垂直）にすると最も防げる。
+
+よって$dS$の内→外へ向かう{\bfseries 単位法線ベクトル}$\bm n$を
+考え$\bm n$と$\bm E$の成す角を$\theta$とすると電場の量は
+
+$E\,dS\cos\theta =\bm E\cdot \bm n\,dS$
+
+これをすべて足せば任意の閉曲面$S$の表面から出て行く電場の総和が分かるので
+
+$$\int_S\bm E\cdot \bm n\,dS\propto\sum_{S\text 内}Q$$
+
+と表せる。
+
+ここで単位を確認しよう。電場$\bm E$は単位電荷あたりに働く力だから電場$\bm E$の単位は\unit{N/C}である。
+また$dS$は\unit{m^2}なので左辺は\unit{N\cdot m^2/C}である。右辺はもちろん\unit{C}だから
+比例定数を右辺につけるとしたら単位は\unit{N\cdot m^2/C^2}である。
+
+しかし我々が用いる単位系では比例定数は歴史的経緯から$\bunsuu{1}{\epsilon_0}$と表すので
+
+$$\int_S\bm E\cdot \bm n\,dS=\bunsuu{1}{\epsilon_0}\sum_{S\text 内}Q$$
+
+と表す\kyakuchuu{高校範囲外だが電束密度$\bm D$を使うと比例定数は必要ない}。
+
+この法則を利用して高校範囲で使用する定理を導こう。
+
+\subsubsection{静止した点電荷の周りの電場}\label{G_ex1}
+
+空間は一様・等方でありどの場所も全く対等である\kyakuchuu{ただし
+物質分布があると対等ではなくなる}。よって電場は点電荷の周りへ{\bfseries 等方的}にわき出る。
+
+\begin{wrapfigure}{l}{10zw}
+\input{coulomb}
+\end{wrapfigure}
+よって点電荷$Q$から$r$の位置の電場を$E(r)$と表すと半径$r$の球面$S$にGaussの法則を用いて，
+
+$E(r)\times 4\pi r^2=\bunsuu{Q}{\epsilon _0}\Leftrightarrow \bm{E(r)=\bunsuu{1}{4\pi\epsilon_0}\,\bunsuu{Q}{r^2}}$
+
+太字の式は電場のCoulombの法則と呼ばれ公式である。
+
+またこれをベクトルで表すと
+$$\bm E(r)=\bunsuu{1}{4\pi\epsilon_0}\,\bunsuu{Q}{r^2}\,\bunsuu{\bm r}{r}
+\hfil\left (k_0=\bunsuu{1}{4\pi\epsilon_0}=9.0\times 10^9\unit{N\cdot m^2/C^2}\right )$$
+$k_0$はCoulomb力の比例定数と呼ばれている。
+
+ただし静止しているとき自分自身の電荷が作り出した電場の影響は受けないことが実験的に証明されている。
+
+\begin{wrapfigure}{l}{22zw}
+\input{heimenba}
+\end{wrapfigure}
+よって点電荷同士に働きあう静電気力(Coulomb力)は左図のようになる($Q_1,Q_2>0$)。
+
+\subsubsection{球対称電荷分布による電場}
+\begin{wrapfigure}{l}{10zw}
+\input{toushitsu}
+\end{wrapfigure}
+対称性より点Oから見ると，等方的に電場が生じる。
+図の球面$S$にGaussの法則を用いると，
+$$E(r)=\bunsuu{1}{4\pi\epsilon_0}\,\bunsuu{\tsum{S\text{内}}{}Q}{r^2}$$
+となる。よって点Oに電荷$\tsum{S\text{内}}{}Q$が点電荷として存在するときの
+電場と同じである\kyakuchuu{万有引力の式の距離が物体の中心の距離であるのはこのような理由による}。
+
+\subsubsection{無限に長い直線状に一様分布した電荷の周りの電場}
+
+対称性から直線状どこから見ても同じ電場が直線に垂直\kyakuchuu{垂直でないと，見るところによって電場が変わる}に
+等方的に生じる。よって図の円柱面SにGaussの法則を用いて
+$$E(r)\times 2\pi rh=\bunsuu{1}{\epsilon_0}\rho h\Leftrightarrow \bm{E(r)=\bunsuu{1}{2\pi\epsilon_0}\,\bunsuu{\rho}{r}}$$
+
+\subsubsection{無限に広い平面状に一様分布した電荷の周りの電場}\label{G_ex4}
+
+\begin{wrapfigure}{l}{15zw}
+\input{nokasane4}
+\end{wrapfigure}
+
+対称性より平面状どこから見ても同じ電場が面に垂直に生じる。図の円柱面$S$にGaussの法則を用いて，
+底面積$A$として$$E\times 2A=\bunsuu{1}{\epsilon_0}\sigma A\Leftrightarrow E=\bunsuu{\sigma}{2\epsilon_0}$$
+
+これは公式として使ってよく，特にコンデンサー%参照
+のところで非常に重要な公式である。
+
+\ref{G_ex1}\textasciitilde\ref{G_ex4}から分かるように，Gaussの法則は積分計算をしなければならないので
+任意の点の電場を求められるのはきわめて対称性の強い電荷分布のときに限られる。
+
+
+
+﻿\subsection{電場の重ね合わせ}
+
+前節の議論でGaussの法則から電場が求まるのは，きわめて対称性の強い電荷分布のときに限られることがわかった。
+しかしこれでは例えば2つの静止した点電荷があったときの電場は求められないことになる。
+よってこの電場を求めるには他の方法を取らざるを得ない。
+そこで重ね合わせの原理を利用することになる
+
+重ね合わせの原理とは例えば点電荷$Q_1, Q_2$以外の電荷は
+無視できる世界での\kyakuchuu{“こんなことありえない”と思う人も
+いるかもしれないが，「$Q_1, Q_2$以外の電荷は無限遠方とみなせる」という意味である}
+点Pを考える。
+
+$Q_1$のみが存在するときのPの電場を$\bm{E}_1$，$Q_2$のときを$\bm{E}_2$とすると，$Q_1, Q_2$が存在するときの
+点Pでの電場$\bm E$は$\bm E=\bm{E}_1+\bm{E}_2$のベクトル和になる。
+
+電荷が何個あっても電場はベクトル和であることが実験的に示されている。
+
+\subsubsection{重ね合わせの原理からGaussの法則\ref{G_ex4}を求める}
+
+\begin{wrapfigure}{l}{20zw}
+\begin{zahyou*}[ul=2.5zw](-4,5)(-2,4)%
+\def\A{(-3,1.5)}%
+\def\B{(-4,-1.5)}
+\def\Q{(0,4.1)}
+\def\N{(2.8,1.3)}
+\def\S{(1.5,-.715)}
+\tenretu{P(0,3)e}
+\Subvec\O\A\C
+\Subvec\O\B\D
+\Subvec\O\S\T
+\Subvec\P\S\U
+\Mulvec{1.2}\U\R
+\Addvec\R\S\L
+\ArrowLine\P\L
+\Subvec\P\T\V
+\Mulvec{1.2}\V\J
+\Addvec\J\T\K
+\ArrowLine\P\K
+\Daen*[0.3]{\O}{2.1}{1.1}
+\Daen*[0.0]{\O}{2}{1}
+\kuromaru{\O;\P;\S;\T}
+\Dashline{0.1}{\O\P\Q}
+\Dashline{0.1}{\S\P\T}
+\Drawline{\A\B\C\D\A}%
+\Drawline{\S\T}
+\HenKo[0]\O\S{$r$}
+\HenKo[0]\S\P{$\sqrt{r^2+a^2}$}
+\HenKo\P\O{$a$}
+\Put\O[sw]{O}
+\Put\N[se]{$\sigma$}
+\touhenkigou[\scalebox{.6}{|}]<1>{\P\L;\P\K}
+\end{zahyou*}
+\end{wrapfigure}
+%{\begin{zahyou*}[ul=.25zw](-2,2)(-2,2)%
+%\En*[0.3]{\O}{2}
+%\En*[0.0]{\O}{1.6}
+%\end{zahyou*}}
+灰色部分の電荷は電荷面密度$\sigma$と厚さ$dr$を用いて$\sigma \times 2\pi r\,dr$と表せ，この部分がPに作る電場は$\Vec{OP}$向き\kyakuchuu{ベクトル和を良く考えてみよう}だから，成分を考えて
+$$\bunsuu{1}{4\pi\epsilon _0}\,\bunsuu{\sigma\times 2\pi r\,dr}{(\sqrt{r^2+a^2})^2}\times\bunsuu{a}{\sqrt{r^2+a^2}}=\bunsuu{\sigma a}{2\epsilon_0}\,\bunsuu{r\,dr}{(r^2+a^2)^{\frac32}}$$
+
+の$r=0\text\textasciitilde\infty$の和が求める電場であるから，
+\begin{align*}
+E&=\bunsuu{\sigma a}{2\epsilon_0}\dint{0}{\infty}\bunsuu{r\,dr}{(r^2+a^2)^{\frac32}}\\
+{}&=\bunsuu{\sigma a}{2\epsilon_0}\teisekibun{-\bunsuu{1}{\sqrt{r^2+a^2}}}{0}{\infty}=\bunsuu{\sigma}{2\epsilon_0}
+\end{align*}
+
+これは当然ながら\ref{G_ex4}のときと同じ結果である。

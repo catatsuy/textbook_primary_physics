@@ -1,0 +1,162 @@
+ \section{保存力}
+
+ \kenten{一般}に仕事$W=\dint{C}{}\bm F\cdot dr$は，始点Aと終点Bの位置を決めてもそれだけでは決まらず，
+ 途中経路に依存する\kyakuchuu{摩擦力など例はいくらでもある}。{\bfseries 力の種類によっては}，$W$が任意の
+ 始点，終点に対し，途中経路によらず，始点，終点の{\bfseries \kenten{位置}のみで決まる}。
+ このような力を『\textgt{\bfseries 保存力}』という。
+ %図
+   \subsubsection{地表付近の重力は保存力}
+
+   例えば図のように質量$m$の物体を任意の経路$C$に沿って，地表付近$y_\text{A}\text{\textasciitilde} y_\text{B}$動かす。%
+   $\bm F=(0,-m\varg,0), d\bm r=(dx,dy,dz)$とおけるから，仕事$W$は
+   $$\dint{C}{}\bm F\cdot dr=\dint{C}{}(-m\varg)\,dy\\
+   =-m\varg\dint{C}{}dy=-m\varg(y_\text{B}-y_\text{A})$$
+   これは経路$C$によらず，$y_\text{A}, y_\text{B}$の位置のみで決まる。よって地表付近の重力は
+   保存力である\kyakuchuu{後で詳説するが地表付近の重力が保存力だから，重力の位置エネルギーが定義できる}。
+
+   \subsubsection{静電気力も保存力}
+
+   重ね合わせの原理より1つの静止点電荷による静電気力が保存力であることを示せばよい。
+   %図
+
+   任意の経路$C$はギザギザを極めて小さくとれば，図のような経路の組み合わせにできる。
+
+   A, Bを決めると，$r_1=r_\text{A}, r_N=r_\text{B}$と固定できるが，経路により$r_2\text\textasciitilde r_{N-1}$はいろいろ変わる。
+   \begin{align*}
+    \dint{C}{}\bm F\cdot dr&=\dint{r_1}{r_2}k_0\bunsuu{Qq}{r^2}\,dr+\dint{r_1}{r_2}k_0\bunsuu{Qq}{r^2}\,dr+\dots +\dint{r_{N-1}}{r_N}k_0\bunsuu{Qq}{r^2}\,dr\\
+    {}&=\dint{r_1=r_\text{A}}{r_N=r_\text{B}}k_0\bunsuu{Qq}{r^2}\,dr=-k_0Qq\left(\bunsuu{1}{r_\text{B}}-\bunsuu{1}{r_\text{B}}\right)
+   \end{align*}
+
+   これより仕事は$r_\text{A}, r_\text{B}$のみで決まり，途中経路によらないことが示された。
+
+   また保存力はどんな動き方をしてもスタート地点に戻ってきたら
+   その仕事の合計は{\bfseries 絶対}に$\bm 0$ということは
+   知っておきたい\kyakuchuu{1周積分$\displaystyle\oint\bm F\cdot d\bm r=0$}。
+
+   \subsubsection{Potential Energy}\label{PE}
+
+   力$\bm F$が保存力であるとき，Potential Energyは次のように定義する。
+
+   Aを基準とするBのPotential Energy $U_\text{B}$は%
+   $U_\text{B}=-\dint{\text A}{\text B}\bm F\cdot d\bm r$\kyakuchuu{保存力なので始点と終点だけ指定すればよい}
+
+   つまり『\textgt{AからBへ運ぶとき，保存力につりあわせる外力のする仕事}』\hfill \ajKakkoAlph{1} \\
+   $\Longleftrightarrow$『\textgt{BからAへ動くとき，保存力自身がする仕事}』\hfill \ajKakkoAlph{2}
+
+   \ajKakkoAlph{1}，\ajKakkoAlph{2}どちらでも言えるようにしておくべきである。
+
+   以上より点電荷$Q$による静電気力のPotential Energyは$r_\text{A}$を基準とすると
+
+   $$U=-\dint{r_\text{A}}{r_\text{B}}\left(k_0\bunsuu{Qq}{x^2}\,dx\right)=k_0Qq\left(\bunsuu{1}{r_\text{B}}-\bunsuu{1}{r_\text{A}}\right)$$
+   と表せる。
+
+   ﻿\subsection{電位}
+
+   電位とは単位電荷あたりの静電気力によるPotential Energyで単位は\unit{J/C}${}={}$\unit{\ruby{V}{\text{ボルト}}}
+
+   前節の議論より$r_\text{A}$に対する$r_\text{B}$の電位$\phi$は，
+
+   $$\phi =\bunsuu{U}{q}=\bm{k_0Q\left(\bunsuu{1}{r_\text{B}}-\bunsuu{1}{r_\text{A}}\right)}$$
+
+   特に$r_\text{A}\to\infty$にとれば$\bm{\phi_\text{B}=k_0\bunsuu{Q}{r_\text{B}}}$
+
+   一般に静電場を$\bm E$としたとき，Aに対するBの電位は$\phi_\text{B}=-\dint{\text A}{\text B}\bm E\cdot d\bm r$
+
+   \subsubsection{一様電場による電位}
+
+   定数での積分計算をしても良いが，\ref{PE}の\ajKakkoAlph{1}，\ajKakkoAlph{2}を利用すると，電場を水の流れと見たときに
+   “上流側”の方が高電位であることはすぐにわかり，
+   それが距離と比例関係にあることもすぐにわかる\kyakuchuu{というよりも分かるように訓練するべきである}。
+
+   \subsubsection{電位の重ね合わせ}
+
+   静電場$\bm E=\bm{E_1}+\bm{E_2}+\cdots +\bm{E_N}$のとき
+   $$\phi _\text{B}=-\dint{\mathrm A}{\mathrm B}\bm E\cdot d\bm r=%
+   -\dint{\mathrm A}{\mathrm B}\bm{E_1}\cdot d\bm r%
+   -\dint{\mathrm A}{\mathrm B}\bm{E_2}\cdot d\bm r%
+   -\cdots -\dint{\mathrm A}{\mathrm B}\bm{E_N}\cdot d\bm r
+   =\phi_{1B}+\phi_{2B}+\cdots+\phi_{NB}$$
+   と表せる。一見すると当たり前のことだが，ベクトル和である電場の重ね合わせに比べ，
+   電位はスカラー和であるので計算は電位の方が楽である。
+
+   ﻿\subsection{Potential Energyから保存力を求める}
+
+   前節よりPotential Energyはスカラーであるから計算が楽であることが分かった。
+
+   そこで計算が楽なPotential Energyで計算して必要に応じて保存力を逆算することができれば便利である。
+   そこでその逆算の方法について考えてみよう。
+
+   Potential Energy $U(x, y,z)$，保存力$\bm F(x, y, z)$とする
+
+   点$\mathrm{A}(x_1,y_1,z_1), \mathrm{B}(x_1+\varDelta x,y_1,z_1)$を考えると
+
+   $$U(x_1+\varDelta x,y_1,z_1)-U(x_1,y_1,z_1)=-\dint{\mathrm A}{\mathrm B}\bm F\cdot d\bm r=-\dint{x_1}{x_1+\varDelta x}F_x\,dx$$
+
+   ただし$F_x$は$\bm F$の$x$成分である。
+
+   ここで$\varDelta x\kinzi 0$のとき
+
+   $$U(x_1+\varDelta x,y_1,z_1)-U(x_1,y_1,z_1)\kinzi -F_x(x_1,y_1,z_1)\times\varDelta x$$
+
+   $\varDelta x\longrightarrow 0$を考えて
+   \begin{align*}
+    F_x(x_1,y_1,z_1)&=\lim_{\varDelta x\to 0}\left\{-\bunsuu{U(x_1+\varDelta x,y_1,z_1)-U(x_1,y_1,z_1)}{\varDelta x}\right\}\\
+    {}&=-\bunsuu{\partial U}{\partial x}\,(x_1,y_1,z_1)
+   \end{align*}
+   これは偏微分と呼ばれる演算で$x$以外の変数を固定して%
+   $x$で微分せよという意味で，$\partial$は$d$とほぼ同じ意味だが$\partial$を使うと偏微分であることを強調できる
+
+
+   よって\textgt{\bfseries 保存力の$\bm x$成分は，Potential Energyの$\bm x$方向にそった変化の割合の逆符号である}。
+   そしてこれは$y, z$方向についても成り立つから，
+
+   $$\bm{F=\left(-\bunsuu{\partial U}{\partial x}, -\bunsuu{\partial U}{\partial y},-\bunsuu{\partial U}{\partial z}\right)=-\mathrm{grad}\,U=-\nabla U}$$
+   ただし，これらの記号は現時点で覚える必要はない
+
+   ﻿\subsection{Potential Energyを利用して運動の様子を目で見る}
+
+   保存力のみを受ける物体のエネルギー保存則より，
+   運動エネルギー(Kinetic Energy)を$K$，Potential Energyを$U$，物体のもつエネルギーを$E$として
+
+   $K+U=E$
+
+   よって\textgt{\bfseries $\bm U$のグラフが分かれば$\bm K$が分かり運動の様子が非常にわかりやすくなる}。
+
+   ﻿\section{静電エネルギー}
+
+   静電エネルギーとは考えている電荷分布を作るのに必要な静電気力につりあわせる外力のする仕事。
+
+  \subsection{大きさムシの荷電粒子系の静電エネルギー}
+
+  $Q_1\text\textasciitilde Q_N$が存在するような電荷分布を作る。静電気力は保存力であることから
+  {\bfseries 計算しやすい動かし方で計算すればよい}。
+
+  よってまず何もない\kyakuchuu{$Q_1\text\textasciitilde Q_N$は無限遠方}状態から$Q_1$を所定の位置に運ぶとき，
+  外力のする仕事$W_1=0$である。
+
+  次に$Q_2$を所定の位置に運ぶと，外力のする仕事は$W_2=Q_2\times k_0\bunsuu{Q_1}{r_{12}}$
+
+  よって$N=2$のときの静電エネルギーは$U_2=W_1+W_2=k_0\bunsuu{Q_1Q_2}{r_{12}}$
+
+  同様に考えていけば$N$個の粒子系の静電エネルギーは，$U_N=\tsum{i<j}{}k_0\bunsuu{Q_iQ_j}{r_{ij}}$
+
+  静電エネルギーはコンデンサー等でも大事な考え方である。
+
+  ﻿\subsection{電気力線について}
+
+
+
+  ﻿\section{導体について}
+
+  \kenten{理想的}な導体は内部に自由電子（伝導電子）
+  が無数に存在する物体\kyakuchuu{現実には$\sim 10^{28}\unit{個/m^3}$程度であり，また導体は主に金属のことである}。
+  絶縁体（誘電体・不導体）はその逆で内部に自由に動ける電荷がない物体である。
+
+  \subsection{静電場の中に導体を入れる}
+
+  静電場の中に導体を入れると
+  静電誘導\kyakuchuu{内部の自由電子が電場から力を受けて移動すること}により現れた電荷の作る電場と
+  外部電場の重ね合わせにより，電荷移動が終わったとき，
+  \textgt{\bfseries 導体内部の電場は$\bm 0$}%
+  \kyakuchuu{というより$\bm 0$でないと電荷が力を受けて動いてしまうので，$\bm 0$になるまで電荷は動き続ける}。
+  よって導体内部は等電位で，マクロに見た電荷分布は導体の表面のみである\kyakuchuu{ミクロに見れば内部にももちろんある}。

@@ -1,0 +1,45 @@
+\begin{Enumerate}
+\item $\dint{S}{}\bm E \cdot \bm n\,dS=\sum\bunsuu{Q}{\epsilon_0}$
+\item $\dint{S}{}\bm B \cdot \bm n\,dS=\sum M=0$
+\end{Enumerate}
+ただし\ajMaru 1，\ajMaru 2の$S$は任意の閉曲面で以下の$S$は$C$を取り囲む面で閉曲面を2つに分割したようなものを想像すればよい。
+\begin{Enumerate*}
+\item $\displaystyle\oint_C\bm E \,dr=-\bunsuu{d}{dt}\int_S\bm B\cdot \bm n\,dS$
+\item $\displaystyle\oint_C\bm H \,dr=\int_S \bm i\cdot \bm n\,dS+\bunsuu{d}{dt}\int_S\bm D\cdot \bm n\,dS$%何らかの色分けを
+\end{Enumerate*}
+\ajMaru 4の強調部分？は物理学では珍しくMaxwellが理論的に導入した\kyakuchuu{物理学の公式はほとんど実験的に判明したものである}。
+
+導入した理由は\ajMaru 3の式との兼ね合いもあるがそれに加えて以下のような考察から導入しなければならないと分かった。
+
+ループCにAmp\'ereの法則を用いると面$S_1,S_2$を考えて
+
+\begin{align}
+\oint_C\bm H \,dr&=\int_{S_1} \bm i\cdot \bm n\,dS=+I\label{amp}\\
+{}&=\int_{S_2} \bm i\cdot \bm n\,dS=0?\label{max}
+\end{align}
+
+式~\eqref{max}では面$S_2$を貫く電流は存在しないので計算ミスではない。しかしよく見ると面$S_2$にはコンデンサー間の
+電場が貫いている。しかも電流によりコンデンサー上の電荷が増えている。我々はこれまでの勉強により電気と磁気
+は非常に密接な関係があることがわかっている。
+よって\ajMaru 4の式に\ajMaru 3と同じような式が出てこないことに違和感を持つべきである%
+\kyakuchuu{残念ながら磁荷は無いので“磁流”はない。したがって\ajMaru 3の式にAmp\'ereのような式は現れない}。
+するとAmp\'ereの式では不十分であることが分かるはずである。
+
+よって\ajMaru 3の式からAmp\'ereの式には$\displaystyle\bunsuu{d}{dt}\int_S\bm D\cdot \bm n\,dS$の項が必要である。
+
+符号は実際に面$S_2$を貫く電束密度を求めてみればよい\kyakuchuu{変位電流ともいう}。
+
+電荷$Q$，面積$S$とすればコンデンサー間の電束密度は$\bm D=\bunsuu{Q}{S}$で$I=\bunsuu{dQ}{dt}$より
+
+$\bunsuu{d}{dt}\dint{S}{}\bm D\cdot \bm n\,dS=\bunsuu{dQ}{dt}=+I$なので符号は正であれば面$S_1$と結果は同じになる。
+
+もちろんこの議論だけでは予想に過ぎず実際にこの項が現れることは実験をして示さねばならない。
+そして現在ではこの項が必要であることは実験的に示されている。
+
+そして以上の議論から次の現象が予言される。
+
+導線に振動電流を流す。すると振動電流の周りには\ajMaru 4により振動磁場が生じ，その周りに\ajMaru 3により振動電場
+が生じ，…
+
+というようにして振動電磁場が空間を伝える現象があることになる。これが電磁波と呼ばれるもので
+Maxwellは電磁波の伝わる速度を理論的に計算し光と同じ速度であることを突き止め，光も電磁波であることを証明した。
