@@ -14,6 +14,11 @@
 TeXでは改行コードは問題にはなりません
 しかしutf-8の扱いは環境によって異なりますので確認の上，扱えない場合は変換等を行ってください
 
-ライセンスはパブリックライセンスですが，使用する際はご一報いただけると嬉しいです
+web http://www.catatsuy.org/
+twitter http://twitter.com/catatsuy
+facebook http://www.facebook.com/catatsuy
+mail catatsuy@catatsuy.org
 
-連絡はhttp://twitter.com/catatsuy かcatatsuy 'at' catatsuy.orgまで
+Copyright 2012, KANEKO Tatsuya
+Free to use and abuse under the MIT license.
+http://www.opensource.org/licenses/mit-license.php
